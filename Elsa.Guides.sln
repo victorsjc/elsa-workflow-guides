@@ -1,12 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Guides.HelloWorld.ConsoleApp", "src\Elsa.Guides.HelloWorld.ConsoleApp\Elsa.Guides.HelloWorld.ConsoleApp.csproj", "{1F446828-EC07-459A-B1A9-02107CE73D02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Dashboard", "src\Elsa.Dashboard\Elsa.Dashboard.csproj", "{1F446828-EC07-459A-B1A9-02107CE73D02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Guides.RecurringTask.ConsoleApp", "src\Elsa.Guides.RecurringTask.ConsoleApp\Elsa.Guides.RecurringTask.ConsoleApp.csproj", "{B79BC733-39A1-471F-9A4E-155DB5A69DD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.WorkflowDesigner", "src\Elsa.WorkflowDesigner\Elsa.WorkflowDesigner.csproj", "{B79BC733-39A1-471F-9A4E-155DB5A69DD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Guides.HelloWorld.WebApp", "src\Elsa.Guides.HelloWorld.WebApp\Elsa.Guides.HelloWorld.WebApp.csproj", "{AF1859EB-A819-421E-BC60-62FD239ADE1F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Guides.DocumentApproval.WebApp", "src\Elsa.Guides.DocumentApproval.WebApp\Elsa.Guides.DocumentApproval.WebApp.csproj", "{809A0DC5-826A-4F2A-BCA2-132B151E1B6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Persistence.EntityFrameworkCore", "src\Elsa.Persistence.EntityFrameworkCore\Elsa.Persistence.EntityFrameworkCore.csproj", "{AF1859EB-A819-421E-BC60-62FD239ADE1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Guides.Dashboard.WebApp", "src\Elsa.Guides.Dashboard.WebApp\Elsa.Guides.Dashboard.WebApp.csproj", "{7EBBA06C-0F36-48F4-9610-C0E68F5CDB0D}"
 EndProject

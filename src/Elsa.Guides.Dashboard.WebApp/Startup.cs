@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace Elsa.Guides.Dashboard.WebApp
 {
@@ -26,7 +28,9 @@ namespace Elsa.Guides.Dashboard.WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            //services.AddControllersWithViews();
+            services.AddMvc();
+            services.AddRouting();
 
             services
                 // Add services used for the workflows runtime.
@@ -39,13 +43,18 @@ namespace Elsa.Guides.Dashboard.WebApp
                 .AddElsaDashboard();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
             app
-                .UseStaticFiles()
                 .UseHttpActivities()
-                .UseRouting()
-                .UseEndpoints(endpoints => endpoints.MapControllers())
+                .UseDefaultFiles()
+                .UseStaticFiles()
+                .UseMvc(routes =>
+                {
+                  routes
+                   .MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}")
+                   .MapRoute(name: "area", template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                 })
                 .UseWelcomePage();
         }
     }
